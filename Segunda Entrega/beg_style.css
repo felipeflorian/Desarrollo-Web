@@ -1,0 +1,153 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ED8770;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 60% auto;
+}
+
+form{
+    display: grid;
+    grid-column: 2;
+    height: 220px;
+    width: 400px;
+    background-color: #EBC8C0;
+    position: absolute;
+    transform: translate(0%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(112, 9, 98, 0.089);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 20px 30px;
+    margin: -150px 0 0 -105px;
+}
+
+form *{
+    font-family: 'Patrick Hand', cursive;
+    color: black;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: black;
+}
+
+button{
+    margin-top: 15px;
+    width: 100%;
+    background-color: #e7d9d6;
+    color: #080710;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    left: -50px;
+    box-shadow: 0 0 40px rgba(162, 158, 192, 0.6);
+}
+
+.logo{
+    display: grid;
+    grid-column: 1;
+}
+
+.log img{
+    height: 100px;
+    width: 100px;
+    margin: 10px 0 0 10px;
+}
+
+.box{
+    display: grid;
+    grid-column: 2;
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(0%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.box .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.social{
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding-top: 100px;
+}
+
+.fb{
+    padding-left: 170px;
+    grid: display;
+    grid-column: 1;
+    grid-row: 2; 
+    
+}
+
+.ig{
+    grid: display;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.twitch{
+    grid: display;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+input[type='image']{
+    height: 75px;
+    line-height: 80px;  
+    width: 90px;  
+    border-radius: 50%;
+    border-color: black;
+    text-align: center;
+    cursor: pointer;
+}

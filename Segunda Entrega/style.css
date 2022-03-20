@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body{
+    background: #EBC8C0;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+}
+
+.wrapper .sidebar{
+    background: #ED8770;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    padding: 25px 0;
+
+}
+
+.wrapper .sidebar h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wrapper .sidebar ul li{
+    padding: 20px;
+    border-bottom: 2px solid #E1816B;
+    border-top: 2px solid #FF937B;
+}
+
+.wrapper .sidebar ul li a{
+    color: #ffffff;
+    display: block;
+}
+
+.wrapper .sidebar ul li a .fa{
+    width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+    background: #e59482;
+}
+
+.wrapper .main_content{
+    width: 100%;
+    margin-left: 200px;
+    margin-right: 25px;
+}
+
+.wrapper .main_content .header a{
+    text-align: right;
+    color: #ffffff;
+    display: block;
+    block-size: 50px 10px;
+}
+
+.wrapper .main_content .header a .fa{
+    padding: 15px;
+    width: 100p;
+}
+.wrapper .main_content .header a:hover{
+    color: #ED8770;
+}
