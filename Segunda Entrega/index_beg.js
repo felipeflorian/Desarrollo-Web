@@ -1,9 +1,9 @@
 function logIn(){
-    document.write("HOLA");
+    //document.write("HOLA");
     window.location = "logIn.html";
 }
 
 function signUp(){
-    document.write("HOLA");
+    //document.write("HOLA");
     window.location = "register.html";
 }

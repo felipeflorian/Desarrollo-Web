@@ -134,3 +134,40 @@ body{
 }
 
 /*-------- END OF ANIMATION ------*/
+
+
+.wrapper .main_content .Games_slider_main_container{
+    margin: auto;
+    background-color: floralwhite;
+    width:800px;
+    padding: 30px;
+    margin-right: 100px;
+    margin-left: 300px;
+}
+
+.wrapper .main_content .Games_slider_main_container ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.Slider{
+    position: relative;
+    width: 800px;
+    height: 300px;
+}
+
+ul.Slider li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    width: inherit;
+    height: inherit;
+    background-color: floralwhite;
+    transition: opacity .5s;
+}
+ul.Slider li img{
+    width: 100%;
+    height: 300px;
+}
