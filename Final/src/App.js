@@ -20,6 +20,10 @@ function App() {
             <Route exact path="/logIn" element={<LogIn />} />
             <Route exact path="/signUp" element={<SignUp />} />
             <Route exact path="/beginning" element={<Beginning />} />   
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/howWorks" element={<How />} />
+            <Route exact path="/top" element={<Top />} />
+            <Route exact path="/faq" element={<Faq />} />
           </Routes>
         </Router>
     </>
