@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body{
+    background: #EBC8C0;
+}
+
+.wrapper_beg{
+    display: flex;
+    position: relative;
+}
+
+.wrapper_beg .sidebar_beg{
+    background: #ED8770;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    padding: 25px 0;
+
+}
+
+.wrapper_beg .sidebar_beg h2{
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wrapper_beg .sidebar_beg ul li{
+    padding: 20px;
+    border-bottom: 2px solid #E1816B;
+    border-top: 2px solid #FF937B;
+}
+
+.wrapper_beg .sidebar_beg ul li a{
+    color: #ffffff;
+    display: block;
+}
+
+.wrapper_beg .sidebar_beg ul li a .fa{
+    width: 25px;
+}
+
+.wrapper_beg .sidebar_beg ul li:hover{
+    background: #e59482;
+}
+
+.wrapper_beg .main_content_beg{
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 50px;
+    margin-left: 200px;
+    margin-right: 25px;
+}
+
+.wrapper_beg .main_content_beg .header a{
+    text-align: right;
+    color: #ffffff;
+    display: block;
+    block-size: 100px 10px;
+}
+
+.wrapper_beg .main_content_beg .header a .fa{
+    padding: 15px;
+    width: 100p;
+}
+.wrapper_beg .main_content_beg h1{
+    text-align: center;
+}
