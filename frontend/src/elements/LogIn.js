@@ -10,7 +10,6 @@ function LogIn(){
     const handleChange = (e) =>{
         const {name, value} = e.target;
         setFormValues({...formValues, [name]:value});
-        console.log(formValues);
     }
 
 
@@ -30,6 +29,7 @@ function LogIn(){
             }
         )
         //result = await result.json();
+        localStorage['actual'] = formValues.user;
         navigate("/beginning");
     }
 

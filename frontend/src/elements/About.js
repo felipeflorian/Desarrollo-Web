@@ -3,8 +3,10 @@ import Nav from './Nav';
 
 function About(){
     return(<>
-            < Nav />
-            <h1>Hola</h1>
+            <div className='wrapper_beg'>
+            <Nav />
+            <h1>PERRRA</h1>
+        </div>
         </>
     );
 }

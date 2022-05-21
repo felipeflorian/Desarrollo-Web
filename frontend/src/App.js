@@ -7,10 +7,13 @@ import Beginning from './elements/Beginning';
 import About from './elements/About';
 import How from './elements/How';
 import Top from './elements/Top';
-import Faq from './elements/Faq';
+import Profile from './elements/Profile';
+import Change from './elements/Change';
 
 
 function App() {
+
+  localStorage.setItem('actual', null);
   
   return (
     <>
@@ -23,7 +26,8 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/howWorks" element={<How />} />
             <Route exact path="/top" element={<Top />} />
-            <Route exact path="/faq" element={<Faq />} />
+            <Route exact path="/profile" element={<Profile />} />
+            <Route exact path="/change" element={<Change />} />
           </Routes>
         </Router>
     </>

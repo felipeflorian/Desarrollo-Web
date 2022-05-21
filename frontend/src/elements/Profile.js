@@ -4,11 +4,15 @@ import WAR from './images/warzone.png';
 import FIFA from './images/fifa.png';
 import FORZA from './images/forza.png';
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
 
 const imgs = [{img: WAR, juego:'WARZONE'}, {img: FIFA, juego: 'FIFA'}, {img: FORZA, juego: 'FORZA'}];
 const delay = 2500;
 
-function Beginning(){
+
+function Profile(){
+    let user = localStorage.getItem('actual');
+
     const [index, setIndex] = React.useState(0);
     const timeoutRef = React.useRef(null);
 
@@ -32,12 +36,15 @@ function Beginning(){
         resetTimeout();
         };
     }, [index]);
+
+    let navigate = useNavigate();
+
     return(<>
         <div className='wrapper_beg'>
-        <Nav />
-            <div className="main_content_beg">
-                <div className="header">
-                    <h1> GAMES </h1>
+            <Nav />
+            <div className='main_content_beg'>
+                <div className='header'>
+                    <h1>Welcome {user}!!</h1>
                 </div>
                 <div className="logo">
                     <div className="slideshow">
@@ -46,17 +53,19 @@ function Beginning(){
                                 <div className="slide" key={index}>
                                     <div className="box">
                                         <img src={item.img}></img>
-                                        <h2>{item.juego}</h2>
                                     </div>
                                 </div>
                             ))}
                         </div>
                     </div>
-                </div>         
+                    <div className='button_change'>
+                        <button onClick={() => navigate("/change")}>Change password</button>
+                    </div>
+                </div>     
             </div>
-            </div>
+        </div>
     </>
     );
 }
 
-export default Beginning;
+export default Profile;
