@@ -1,7 +1,11 @@
 # Gamer match
 
-A web application that presents a simple LogIn/SignUp, and a principal web page where its shown the characteristics of it such as: top players and games (estracted from a dummy database), about, beginning page, and profile, where can be changed the user password.
+A online application that provides a simple LogIn/SignUp, as well as a main web page that displays the application's features, such as top players and games (extracted from a dummy database), about, the first page, and profile, where the user password can be changed.
 
-It was developed using ReacJS, NodeJS, and mongoDB. ReactJS for frontend where the style is done with CSS, and for the backend is used express and mongoDB. The frontend its fully developed, whereas the backend is lack in security.
 
-This project was done as the final project of the course web development from Rosario University in Colombia.
+ReactJS, NodeJS, and mongoDB were used to create it.
+ReactJS is used for the frontend, using CSS for styling, and express and mongoDB are utilized for the backend.
+The frontend is entirely functional, however the backend lacks security.
+
+
+This project was completed as part of the web development course at Rosario University in Colombia. 
